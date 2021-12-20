@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Zadanie 1.
+/*        const liczba = parseInt(prompt('Podaj liczbe: '));
+        if (liczba % 2 == 0) {
+            document.write('Podana liczba jest parzysta!');
+        } else {
+            document.write('Podana liczba jest nieparzysta!');
+        }
+        // Zadanie 2.
+        /*const liczba = parseInt(prompt('Podaj liczbe:'));
+        if (liczba > 5 && liczba != 6 && liczba != 12 && liczba != 0) {
+            document.write('Spelnia warunek!');
+        } else {
+            document.write('Nie spelnia!')
+        }*/
+        // Zadanie 3.
+/*
+        var dzien = prompt('Wprowadz liczbe: ', 'liczba');
+        if(dzien == 1){
+            document.write('Poniedziałek');
+        }
+        else if(dzien == 2){
+            document.wite('Wtorek');
+        }
+        else if(dzien == 3){
+            document.wite('Sroda');
+        }
+        else if(dzien == 4){
+            document.wite('Czwartek');
+        }
+        else if(dzien == 5){
+            document.write('Piątek')
+        }
+        else if(dzien == 6){
+            document.write('Sobota')
+        }
+        else if(dzien == 7){
+            document.write('Niedziela')
+        }
+        else{
+            document.write('Błędna liczba!')
+        }
+*/
+        // Zadanie 4.
+        // const liczba = prompt('Wymyśl liczbę: ');
+        // const a = prompt('Wprowadź pierwszą liczbę przedziału: ');
+        // const b = prompt('Wprowadź drugą ostatnią liczbę przedziału');
+
+        // if (a > b) {
+        //     if (a >= liczba && b <= liczba) document.write('Liczba jest w tym przedziale!');
+        // } else {
+        //     document.write('Liczba nie jest w tym przedziale!');
+        // } else {
+        //     if (a < b) {
+        //         if (b >= liczba && a <= liczba) document.write('Liczba jest w  w przedziale!');
+        //     } else {
+        //         document.write('Liczba nie jest w przedziale!');
+        //     }
+        //     if (b >= liczba && a <= liczba) document.write('Liczba jest w przedziale');
+        // } else {
+        //     document.write('Liczba nie jest w tym przedziale!')
+        // }
+        // Zadanie 5.
+        // const liczby1 = prompt('Podaj 1 liczbę: ');
+        // const liczby2 = prompt('Podaj 3 liczbę: ');
+        // const liczby3 = prompt('Podaj 4 liczbę: ');
+
+        // if(liczba1<liczba2){
+        // }
+
+        // Zadanie 6. 
+        // const a = prompt('Podaj liczbę: ');
+        // const b = prompt('Podaj potęgę: ');
+
+        // if (a % b == 0) {
+        //     document.write('Jest podzielna!')
+        // } else if (a == 0) {
+        //     document.write('Nie wpiusjemy zera dzbanie!')
+        // } else {
+        //     document.write('Nie jest podzielna');
+        // }
+        // Zadanie 7.
+            
+        //formularz
+    </script>
+
+    <!-- <form action="" method="POST">
+        <input type="number" name="liczba1" placeholder="wpisz pierwszą liczbę">
+        <input type="number" name="liczba2" placeholder="wpisz drugą liczbę">
+        <input type="submit" value="oblicz">
+    </form>
+    <div class="wynik"></div>
+
+    <script>
+        // odwolujemy sie do formularza(tworzymy zmienna ktora przechowuje obiekt formularza)
+        const formularz = document.querySelector('form');
+        // pobieramy div'a o klasie wynik
+        const skutek = document.querySelector('div.wynik');
+        // przypisujemy obsluge zdarzenia submit do formularza
+        formularz.addEventListener('submit', (e) => {
+            // zatrzymujemy domyślną akcje osbługi formularza przez przeglądarkę
+            e.preventDefault();
+            // pobieramy wartosc pola liczba 1 i liczba2
+            const l1 = document.querySelector('input[name="liczba1"]').value * 1;
+            const l2 = document.querySelector('input[name="liczba2"]').value * 1;
+            // tworzymy zmienna suma, ktora bedzie miala wartosc sumy liczb z formularza
+            const suma = l1 + l2;
+            // wyswietlamy sume w elemencie div
+            skutek.textContent = 'Suma wynosi: ' + suma;
+            skutek.textContent = `Suma liczb ${l1} i ${l2} wynosi: ${suma}`;
+        });
+    </script>
+   </body>
+</html>
